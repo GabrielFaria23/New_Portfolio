@@ -1,0 +1,47 @@
+.tbar {
+    background-color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 100% !important;
+}
+
+.menuOptions {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 40%;
+}
+
+.option {
+    display: flex;
+    flex-direction: row;
+    margin-right: 30px;
+}
+
+.option a {
+    text-decoration: none;
+    color: #544F4F;
+    display: flex;
+    flex-direction: row;
+
+}
+
+.option:hover, .option:active {
+    opacity: 0.4;
+}
+
+mat-icon{
+    margin-top: 4px;
+    margin-left: 5px;
+    color: #544F4F;
+}
+
+img {
+    margin-right: 30px;
+    justify-content: center;
+}
+
+img:hover {
+    opacity: 0.4;
+}
