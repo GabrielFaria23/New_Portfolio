@@ -1,0 +1,43 @@
+.home {
+    width: 100%;
+    height: 95%;
+    background-image: url("../../assets/images/backgroundHome.png");
+    background-position: center;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 0;
+}
+
+.textHi {
+    margin-top: 200px;
+    color: white;
+    font-size: 28px;
+    font-weight: bold;
+} 
+
+.fotoPortfolio {
+    width: 515px;
+    height: 100%;
+    background-image: url("../../assets/images/foto_portifolio.png");
+    background-repeat: no-repeat;
+}
+
+.textSobreMim {
+    margin-top: 200px;
+    color: white;
+    font-size: 22px;
+    font-weight: 200;
+    margin-right: 200px;
+}
+
+.linkWorks {
+    text-decoration: none;
+    color: #544F4F;
+}
+
+.linkWorks:hover, .linkWorks:active {
+    opacity: 0.4;
+}
