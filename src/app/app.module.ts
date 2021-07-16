@@ -14,13 +14,15 @@ import {MatButtonModule} from '@angular/material/button';
 import {MatButtonToggleModule} from '@angular/material/button-toggle';
 import {MatIconModule} from '@angular/material/icon';
 import {MatCardModule} from '@angular/material/card';
+import { SkillsAndContactsComponent } from './skills-and-contacts/skills-and-contacts.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HeaderComponent,
     HomeComponent,
-    WorkComponent
+    WorkComponent,
+    SkillsAndContactsComponent
   ],
   imports: [
     BrowserModule,
