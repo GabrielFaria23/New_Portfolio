@@ -6,6 +6,8 @@ import { AppComponent } from './app.component';
 import { HeaderComponent } from './header/header.component';
 import { HomeComponent } from './home/home.component';
 import { WorkComponent } from './work/work.component';
+import { SkillsComponent } from './skills/skills.component';
+import { ContactComponent } from './contact/contact.component';
 
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import {MatToolbarModule} from '@angular/material/toolbar';
@@ -14,7 +16,7 @@ import {MatButtonModule} from '@angular/material/button';
 import {MatButtonToggleModule} from '@angular/material/button-toggle';
 import {MatIconModule} from '@angular/material/icon';
 import {MatCardModule} from '@angular/material/card';
-import { SkillsAndContactsComponent } from './skills-and-contacts/skills-and-contacts.component';
+import {MatSidenavModule} from '@angular/material/sidenav';
 
 @NgModule({
   declarations: [
@@ -22,7 +24,8 @@ import { SkillsAndContactsComponent } from './skills-and-contacts/skills-and-con
     HeaderComponent,
     HomeComponent,
     WorkComponent,
-    SkillsAndContactsComponent
+    SkillsComponent,
+    ContactComponent
   ],
   imports: [
     BrowserModule,
@@ -33,7 +36,8 @@ import { SkillsAndContactsComponent } from './skills-and-contacts/skills-and-con
     MatButtonModule,
     MatButtonToggleModule,
     MatIconModule,
-    MatCardModule
+    MatCardModule,
+    MatSidenavModule
   ],
   providers: [],
   bootstrap: [AppComponent]
