@@ -1,24 +1,33 @@
-import {Component } from '@angular/core';
+import {AfterContentInit, Component } from '@angular/core';
+import { TranslateService } from '@ngx-translate/core';
 
 @Component({
   selector: 'app-header',
   templateUrl: './header.component.html',
   styleUrls: ['./header.component.css']
 })
-export class HeaderComponent{
+export class HeaderComponent implements AfterContentInit{
+
+  selected: string;
+  selectedSidenav: string;
 
   sidenavOpened: boolean;
   
   width: number;
-  widthMaiorMenos920:boolean;
+  widthMaiorMenos1160:boolean;
 
-  constructor() { }
+  constructor(private translate: TranslateService) { }
+  
+  ngAfterContentInit(): void {
+    this.selected = 'br';
+    this.selectedSidenav ='br';
+  }
   
   ngOnInit(): void {
-    if(window.innerWidth > 1050){
-      this.widthMaiorMenos920 = true;
+    if(window.innerWidth > 1160){
+      this.widthMaiorMenos1160 = true;
     }else{
-      this.widthMaiorMenos920 =false;
+      this.widthMaiorMenos1160 =false;
     }
   }
 
@@ -26,10 +35,15 @@ export class HeaderComponent{
     this.width = event.target.innerWidth;
     console.log(this.width);
     
-    if(this.width > 1050)
-      this.widthMaiorMenos920 = true;
+    if(this.width > 1160)
+      this.widthMaiorMenos1160 = true;
     else
-      this.widthMaiorMenos920 = false;
+      this.widthMaiorMenos1160 = false;
   }
 
+  useLanguage(language: string){
+    this.translate.use(language);
+  }
+  
 }
+

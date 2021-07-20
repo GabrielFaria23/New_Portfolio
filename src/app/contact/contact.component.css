@@ -1,9 +1,21 @@
 .imageBackgroundContact {
     width: 100%;
     height: 600px;
+    min-width: 280px;
+    max-height: 600px;
     background-image: url("../../assets/images/backgroundHome.png");
-    background-size: 100%,100%;
+    background-size: cover;
     background-repeat: no-repeat;
+    position: relative;
+    bottom: 0;
+}
+.componentsPosition{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
 }
 
 .menu {
@@ -18,6 +30,7 @@
     font-size: 20px;
     color: #fff;
     font-weight: bold;
+    margin-bottom: 50px;
 }
 
 div a {
@@ -57,17 +70,55 @@ label {
     text-decoration: none;
 }
 
+.textThanks {
+    color: #fff;
+    font-weight: bold;
+    font-size: 20px;
+    text-align: center;
+}
+
 @media screen and (max-width: 650px){
-    .imageBackgroundContact {
-        flex-wrap: wrap;
+    .componentsPosition {
+        justify-content: center;
     }
     .menu {
-        margin-top: 100px;
+        width: 40%;
+        margin-top: 50px;
     }
+    
     .socialNetworks {
-        margin-top: 100px;
+        width: 40%;
+        margin-top: 50px;
     }
+
+    .menu {
+        align-items: center;
+    }
+
+    .socialNetworks {
+        align-items: center;
+    }
+
     .phoneAndEmail {
+        width: 85%;
         margin-top: 100px;
+        align-items: center;
+    }
+}
+
+@media screen and (max-width: 425px){
+    .title {
+        font-size: 14px;
+        font-weight: bold;
+        margin-bottom: 50px;
+    }
+    
+    div a {
+        font-size: 12px;
+        font-weight: 300;
+    }
+    label {
+        font-size: 12px;
+        font-weight: 300;
     }
 }

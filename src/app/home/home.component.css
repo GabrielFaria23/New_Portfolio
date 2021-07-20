@@ -48,7 +48,8 @@ img {
 
 .linkWorks {
     text-decoration: none;
-    color: #544F4F;
+    color: #fff;
+    font-weight: bold;
 }
 
 .linkWorks:hover, .linkWorks:active {

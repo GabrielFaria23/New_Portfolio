@@ -1,42 +1,55 @@
-<div *ngIf="widthMaiorMenos920" (window:resize)="onResize($event)">
+<div *ngIf="widthMaiorMenos1160" (window:resize)="onResize($event)">
   <mat-toolbar class="mat-elevation-z4 tbar" >
     <div class="menuOptions">
       <div class="option">
-        <a href="#home">Início<mat-icon>home</mat-icon></a>
+        <a href="#home">{{'app.home' | translate}}<mat-icon>home</mat-icon></a>
       </div>
       <div class="option">
-        <a href="#work">Trabalho<mat-icon>work</mat-icon></a>
+        <a href="#work">{{'app.projects' | translate}}<mat-icon>work</mat-icon></a>
       </div> 
       <div class="option">
-        <a href="#skills">Habilidades<mat-icon>view_list</mat-icon></a>
+        <a href="#skills">{{'app.skills' | translate}}<mat-icon>view_list</mat-icon></a>
       </div> 
       <div class="option">
-        <a href="#contacts">Contato<mat-icon>contacts</mat-icon></a>
-      </div> 
-      <div class="option">
-        <a href="#">Idioma<mat-icon>language</mat-icon></a>      
+        <a href="#contacts">{{'app.contact' | translate}}<mat-icon>contacts</mat-icon></a>
       </div> 
     </div>
     <div class="img">
       <a href="https://www.linkedin.com/in/gabrielnunesfaria/" target="_blank"><img class="imgToolbar" src="../assets/icons/linkedinTbar.png" alt="Linkedin"></a>
       <a href="https://github.com/GabrielFaria23" target="_blank"><img class="imgToolbar" src="../assets/icons/gitTbar.png" alt="GitHub"></a>
+      <mat-form-field appearance="fill">
+        <mat-label>{{'app.language' | translate}} <mat-icon>language</mat-icon></mat-label>
+        <mat-select [(value)]="selected">
+          <mat-option selected style="background-color: #fff; color: #544F4F;" (click)="useLanguage('br')" value="br">{{'app.portugueseLanguage' | translate}}</mat-option>
+          <mat-option style="background-color: #fff; color: #544F4F;" (click)="useLanguage('en')" value="en">{{'app.englishLanguage' | translate}}</mat-option>
+        </mat-select>
+      </mat-form-field>
     </div>
   </mat-toolbar>
 </div>
-<div *ngIf="!widthMaiorMenos920" (window:resize)="onResize($event)"> 
+<div *ngIf="!widthMaiorMenos1160" (window:resize)="onResize($event)"> 
   <mat-toolbar class="mat-elevation-z4 tbarMenuSideNav">
     <button mat-icon-button (click)="sidenav.toggle()" color="accent">
       <mat-icon>menu</mat-icon>
     </button> 
+    <div>
+      <mat-form-field appearance="fill">
+        <mat-label>{{'app.language' | translate}} <mat-icon>language</mat-icon></mat-label>
+        <mat-select [(value)]="selectedSidenav">
+          <mat-option style="background-color: #fff; color: #544F4F;" (click)="useLanguage('br')" value="br">{{'app.portugueseLanguage' | translate}}</mat-option>
+          <mat-option style="background-color: #fff; color: #544F4F;" (click)="useLanguage('en')" value="en">{{'app.englishLanguage' | translate}}</mat-option>
+        </mat-select>
+      </mat-form-field>
+    </div>
   </mat-toolbar>
     <mat-sidenav-container class="sidenav-container">
       <mat-sidenav class="sidenav mat-elevation-z4" #sidenav mode="side" [(opened)]="sidenavOpened" fixedInViewport="true" fixedTopGap="55">
         <div class="sidenavItems">
           <ul>
-            <li><a href="#home" (click)="sidenav.toggle()"><mat-icon class="iconSideNav">home</mat-icon> Início </a></li>
-            <li><a href="#work" (click)="sidenav.toggle()"><mat-icon class="iconSideNav">work</mat-icon>Work</a></li>
-            <li><a href="#contacts" (click)="sidenav.toggle()"><mat-icon class="iconSideNav">contacts</mat-icon> Contato </a></li>
-            <li><a href="#"><mat-icon class="iconSideNav">language</mat-icon> Idioma </a></li>
+            <li><a href="#home" (click)="sidenav.toggle()"><mat-icon class="iconSideNav">home</mat-icon> {{'app.home' | translate}} </a></li>
+            <li><a href="#work" (click)="sidenav.toggle()"><mat-icon class="iconSideNav">work</mat-icon>{{'app.projects' | translate}}</a></li>
+            <li><a href="#skills" (click)="sidenav.toggle()"><mat-icon class="iconSideNav">view_list</mat-icon>{{'app.skills' | translate}}</a></li>
+            <li><a href="#contacts" (click)="sidenav.toggle()"><mat-icon class="iconSideNav">contacts</mat-icon> {{'app.contact' | translate}} </a></li>            
             <li><a href="https://www.linkedin.com/in/gabrielnunesfaria/" target="_blank"><img src="../assets/icons/linkedinTbar.png" alt="Linkedin"> Linkedin</a></li>
             <li><a href="https://github.com/GabrielFaria23" target="_blank"><img src="../assets/icons/gitTbar.png" alt="GitHub"> GitHub</a></li>
           </ul>

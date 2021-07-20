@@ -1,40 +1,48 @@
 <div class="work">
     <div class="workPosition">
-        <mat-card class="mat-elevation-z3">
-            <mat-card-title>
-                <p>Gerenciador de Biblioteca</p>
-            </mat-card-title>
-            <div class="contentPosition">
-                <img mat-card-md-image src="../../assets/images/library.png">    
-                <mat-card-content>
-                    <p>Sistema para gerenciar e <br>
-                        organizar livros em <br>
-                        bibliotecas</p>
-                </mat-card-content>
-            </div>
-        </mat-card>
-        <mat-card class="mat-elevation-z4">
-            <mat-card-title>
-                <p>Portfolio</p>
-            </mat-card-title>
-            <div class="contentPosition">
-                <img mat-card-md-image src="../../assets/images/portifolioNewImage.png">    
-                <mat-card-content>
-                    <p>Código desenvolvido <br>para criação desse <br>portfólio</p>
-                </mat-card-content>
-            </div>
-        </mat-card>
-        <mat-card class="mat-elevation-z4">
-            <mat-card-title>
-                <p>Gerenciador de Estoque de cerveja</p>
-            </mat-card-title>
-            <div class="contentPosition">
-                <img mat-card-lg-image src="../../assets/images/beerstock.png">    
-                <mat-card-content>
-                    <p>Sistema para gerenciar <br>
-                        estoques de cerveja<br>
-                </mat-card-content>
-            </div>
-        </mat-card>
+        <a href="https://github.com/GabrielFaria23/library-management" target="_blank">
+            <mat-card class="mat-elevation-z4">
+                <mat-card-title>
+                    <p>{{'app.workLibrary' | translate}}</p>
+                </mat-card-title>
+                <div class="contentPosition">
+                    <img mat-card-md-image src="../../assets/images/library.png">    
+                    <mat-card-content>
+                        <p>{{'app.workLibraryDescription1' | translate}} <br>
+                            {{'app.workLibraryDescription2' | translate}} <br>
+                            {{'app.workLibraryDescription3' | translate}}</p>
+                    </mat-card-content>
+                </div>
+            </mat-card>
+        </a>
+        <a href="https://github.com/GabrielFaria23/New_Portfolio" target="_blank">
+            <mat-card class="mat-elevation-z4">
+                <mat-card-title>
+                    <p>{{'app.workPortfolio' | translate}}</p>
+                </mat-card-title>
+                <div class="contentPosition">
+                    <img mat-card-md-image style="border-radius: 10px;" src="../../assets/images/newImagePortfolio.png">    
+                    <mat-card-content>
+                        <p>{{'app.workPortfolioDescription1' | translate}}<br>
+                            {{'app.workPortfolioDescription2' | translate}} <br>
+                            {{'app.workPortfolioDescription3' | translate}}</p>
+                    </mat-card-content>
+                </div>
+            </mat-card>
+        </a>
+        <a href="https://github.com/GabrielFaria23/beer_api" target="_blank">
+            <mat-card class="mat-elevation-z4">
+                <mat-card-title>
+                    <p>{{'app.workBeerStockManager' | translate}}</p>
+                </mat-card-title>
+                <div class="contentPosition">
+                    <img mat-card-lg-image src="../../assets/images/beerstock.png">    
+                    <mat-card-content>
+                        <p>{{'app.workBeerStockManagerDescription1' | translate}} <br>
+                            {{'app.workBeerStockManagerDescription2' | translate}}<br>
+                    </mat-card-content>
+                </div>
+            </mat-card>
+        </a>
     </div>
 </div>

@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import * as AOS from 'aos';
+import { TranslateService } from '@ngx-translate/core';
 
 @Component({
   selector: 'app-root',
@@ -8,10 +8,13 @@ import * as AOS from 'aos';
 })
 export class AppComponent implements OnInit{
 
-  title = 'portfolio';
+  title = 'Gabriel';
+
+  constructor(private translate: TranslateService){
+    translate.setDefaultLang('br');
+  }
 
   ngOnInit(): void {
-    AOS.init();
   }
 
 }

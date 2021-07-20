@@ -36,7 +36,7 @@
     
 }
 
-.option:hover, .option:active {
+.option:hover {
     opacity: 0.4;
 }
 
@@ -45,6 +45,29 @@ mat-icon{
     margin-left: 5px;
     color: #544F4F;
 }
+
+mat-form-field {
+    width: 170px;
+    margin-top: 8px;
+}
+
+mat-label{
+    color: #544F4F;
+    font-weight: 500;
+    font-size: 12px;
+}
+
+mat-select {
+    align-items: center;
+    font-size: 14px;
+    color: #544F4F;
+}
+
+.not-empty-select.mat-selected {
+    color: #544F4F !important;
+    background-color: #fff;
+}
+
 
 .imgToolbar {
     margin-right: 30px;
@@ -59,7 +82,7 @@ img:hover {
     background-color: white;
     display: flex;
     flex-direction: row;
-    justify-content: flex-start;
+    justify-content: space-between;
     align-items: center;
     position: fixed;
     z-index: 2;

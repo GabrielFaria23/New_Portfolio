@@ -1,0 +1,43 @@
+{
+    "app": {
+        "home": "Início",
+        "projects": "Projetos",
+        "skills": "Habilidades",
+        "contact": "Contato",
+        "language": "Idioma",
+
+        "englishLanguage": "Inglês",
+        "portugueseLanguage": "Portugues (Brasil)",
+        
+        "homeHi": "Oi,",
+        "homeMe": "Eu sou o Gabriel",
+        "homeMeJobDescription": "Desenvolvedor Web",
+        "homeDescription": "Tenho 23 anos, sempre fui muito ligado com a área  de tecnologia e constantemente atualizo meus conhecimentos no geral. Tenho facilidade em me comunicar e sempre gosto de fazer novas amizades, acredito que sempre temos algo a compartilhar e aprender no dia a dia.",
+        "homeStudy": "Ultimamente o meu foco de estudo tem sido sobre Java utilizando principalmente o framework Spring Boot e Typescript utilizando Angular.",
+        "homeProjectRedirectClick":"Clique ",
+        "homeProjectRedirectLink": "aqui",
+        "homeProjectRedirect":" para conhecer um pouco mais sobre projetos pessoais que desenvolvi.",
+
+        "workLibrary": "Gerenciador de Bibliotecas",
+        "workLibraryDescription1": "Sistema para gerenciar e ",
+        "workLibraryDescription2": "organizar livros em ",
+        "workLibraryDescription3": "bibliotecas.",
+        "workPortfolio": "Portfolio",
+        "workPortfolioDescription1": "Código desenvolvido ",
+        "workPortfolioDescription2": "para criação desse ",
+        "workPortfolioDescription3": "portfólio.",
+        "workBeerStockManager": "Gerenciador de estoque de cerveja",
+        "workBeerStockManagerDescription1": "Sistema para gerenciar ",
+        "workBeerStockManagerDescription2": "estoques de cerveja.",
+
+
+        "skillsTitle": "Minhas Habilidades",
+
+        "contactMenu": "Menu",
+        "contactSocialNetwork": "Redes Sociais",
+        "contactPhone": "Telefone: ",
+        "contactPhoneNumber": "(37) 998022731",
+        "contactEmail": "Email: ",
+        "contactEmailName": "gabrielnunesfariapta@hotmail.com"
+    }
+}
