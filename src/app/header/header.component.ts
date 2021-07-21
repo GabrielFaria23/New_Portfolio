@@ -14,7 +14,7 @@ export class HeaderComponent implements AfterContentInit{
   sidenavOpened: boolean;
   
   width: number;
-  widthMaiorMenos1160:boolean;
+  widthMaior1160:boolean;
 
   constructor(private translate: TranslateService) { }
   
@@ -25,20 +25,19 @@ export class HeaderComponent implements AfterContentInit{
   
   ngOnInit(): void {
     if(window.innerWidth > 1160){
-      this.widthMaiorMenos1160 = true;
+      this.widthMaior1160 = true;
     }else{
-      this.widthMaiorMenos1160 =false;
+      this.widthMaior1160 =false;
     }
   }
 
   onResize(event) {
     this.width = event.target.innerWidth;
-    console.log(this.width);
     
     if(this.width > 1160)
-      this.widthMaiorMenos1160 = true;
+      this.widthMaior1160 = true;
     else
-      this.widthMaiorMenos1160 = false;
+      this.widthMaior1160 = false;
   }
 
   useLanguage(language: string){

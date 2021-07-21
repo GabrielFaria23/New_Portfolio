@@ -1,4 +1,4 @@
-<div *ngIf="widthMaiorMenos1160" (window:resize)="onResize($event)">
+<div *ngIf="widthMaior1160" (window:resize)="onResize($event)">
   <mat-toolbar class="mat-elevation-z4 tbar" >
     <div class="menuOptions">
       <div class="option">
@@ -15,8 +15,8 @@
       </div> 
     </div>
     <div class="img">
-      <a href="https://www.linkedin.com/in/gabrielnunesfaria/" target="_blank"><img class="imgToolbar" src="../assets/icons/linkedinTbar.png" alt="Linkedin"></a>
-      <a href="https://github.com/GabrielFaria23" target="_blank"><img class="imgToolbar" src="../assets/icons/gitTbar.png" alt="GitHub"></a>
+      <a href="https://www.linkedin.com/in/gabrielnunesfaria/" target="_blank"><img class="imgToolbar" src="assets/icons/linkedin-tbar.png" alt="Linkedin"></a>
+      <a href="https://github.com/GabrielFaria23" target="_blank"><img class="imgToolbar" src="assets/icons/git-tbar.png" alt="GitHub"></a>
       <mat-form-field appearance="fill">
         <mat-label>{{'app.language' | translate}} <mat-icon>language</mat-icon></mat-label>
         <mat-select [(value)]="selected">
@@ -27,7 +27,7 @@
     </div>
   </mat-toolbar>
 </div>
-<div *ngIf="!widthMaiorMenos1160" (window:resize)="onResize($event)"> 
+<div *ngIf="!widthMaior1160" (window:resize)="onResize($event)"> 
   <mat-toolbar class="mat-elevation-z4 tbarMenuSideNav">
     <button mat-icon-button (click)="sidenav.toggle()" color="accent">
       <mat-icon>menu</mat-icon>
@@ -50,8 +50,8 @@
             <li><a href="#work" (click)="sidenav.toggle()"><mat-icon class="iconSideNav">work</mat-icon>{{'app.projects' | translate}}</a></li>
             <li><a href="#skills" (click)="sidenav.toggle()"><mat-icon class="iconSideNav">view_list</mat-icon>{{'app.skills' | translate}}</a></li>
             <li><a href="#contacts" (click)="sidenav.toggle()"><mat-icon class="iconSideNav">contacts</mat-icon> {{'app.contact' | translate}} </a></li>            
-            <li><a href="https://www.linkedin.com/in/gabrielnunesfaria/" target="_blank"><img src="../assets/icons/linkedinTbar.png" alt="Linkedin"> Linkedin</a></li>
-            <li><a href="https://github.com/GabrielFaria23" target="_blank"><img src="../assets/icons/gitTbar.png" alt="GitHub"> GitHub</a></li>
+            <li><a href="https://www.linkedin.com/in/gabrielnunesfaria/" target="_blank"><img src="assets/icons/linkedin-tbar.png" alt="Linkedin"> Linkedin</a></li>
+            <li><a href="https://github.com/GabrielFaria23" target="_blank"><img src="assets/icons/git-tbar.png" alt="GitHub"> GitHub</a></li>
           </ul>
         </div>
       </mat-sidenav>      
