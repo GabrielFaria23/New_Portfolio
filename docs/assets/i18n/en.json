@@ -1,0 +1,42 @@
+{
+    "app": {
+        "home": "Home",
+        "projects": "Projects",
+        "skills": "Skills",
+        "contact": "Contact",
+        "language": "Language",
+
+        "englishLanguage": "English",
+        "portugueseLanguage": "Portuguese (Brazil)",
+        
+        "homeHi": "Hi,",
+        "homeMe": "I'm Gabriel",
+        "homeMeJobDescription": "Web Developer",
+        "homeDescription": "I'm 23 years old, I've always been very connected with the technology area and I constantly update my knowledge in general. I find it easy to communicate and I always like to make new friends, I believe that we always have something to share and learn on a daily basis.",
+        "homeStudy": "Lately my focus of study has been on Java mainly using the Spring Boot framework and Typescript using Angular",
+        "homeProjectRedirectClick":"Click ",
+        "homeProjectRedirectLink": "here",
+        "homeProjectRedirect": "to learn more about personal projects that I developed.",
+
+        "workLibrary": "Library Management",
+        "workLibraryDescription1": "System to manage and ",
+        "workLibraryDescription2": "organize books in ",
+        "workLibraryDescription3": "libraries.",
+        "workPortfolio": "Portfolio",
+        "workPortfolioDescription1": "Code developed ",
+        "workPortfolioDescription2": "to create this ",
+        "workPortfolioDescription3": "portfolio.",
+        "workBeerStockManager": "Beer stock manager",
+        "workBeerStockManagerDescription1": "System to manage ",
+        "workBeerStockManagerDescription2": "beer stocks.",
+
+        "skillsTitle": "My Skills",
+
+        "contactMenu": "Menu",
+        "contactSocialNetwork": "Social networks",
+        "contactPhone": "Cell: ",
+        "contactPhoneNumber": "(37) 998022731",
+        "contactEmail": "Email: ",
+        "contactEmailName": "gabrielnunesfariapta@hotmail.com"
+    }
+}
