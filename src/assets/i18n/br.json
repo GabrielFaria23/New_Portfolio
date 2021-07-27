@@ -15,8 +15,10 @@
         "homeDescription": "Tenho 23 anos, sempre fui muito ligado com a área  de tecnologia e constantemente atualizo meus conhecimentos no geral. Tenho facilidade em me comunicar e sempre gosto de fazer novas amizades, acredito que sempre temos algo a compartilhar e aprender no dia a dia.",
         "homeStudy": "Ultimamente o meu foco de estudo tem sido sobre Java utilizando principalmente o framework Spring Boot e Typescript utilizando Angular.",
         "homeProjectRedirectClick":"Clique ",
+        "homeProjectRedirectClickLowerCase":"clique ",
         "homeProjectRedirectLink": "aqui",
-        "homeProjectRedirect":" para conhecer um pouco mais sobre projetos pessoais que desenvolvi.",
+        "homeProjectRedirect":" para conhecer um pouco mais sobre projetos pessoais que desenvolvi, ou",
+        "homeProjectRedirectResume": "para acessar o meu currículo.",
 
         "workLibrary": "Gerenciador de Bibliotecas",
         "workLibraryDescription1": "Sistema para gerenciar e ",

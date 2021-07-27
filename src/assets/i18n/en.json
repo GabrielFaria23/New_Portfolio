@@ -15,8 +15,10 @@
         "homeDescription": "I'm 23 years old, I've always been very connected with the technology area and I constantly update my knowledge in general. I find it easy to communicate and I always like to make new friends, I believe that we always have something to share and learn on a daily basis.",
         "homeStudy": "Lately my focus of study has been on Java mainly using the Spring Boot framework and Typescript using Angular",
         "homeProjectRedirectClick":"Click ",
+        "homeProjectRedirectClickLowerCase":"click ",
         "homeProjectRedirectLink": "here",
-        "homeProjectRedirect": "to learn more about personal projects that I developed.",
+        "homeProjectRedirect": "to learn more about personal projects that I developed, or",
+        "homeProjectRedirectResume": "to access my resume.",
 
         "workLibrary": "Library Management",
         "workLibraryDescription1": "System to manage and ",
